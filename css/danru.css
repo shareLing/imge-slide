@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.banner{
+    width:730px;
+    height: 454px;
+    border: 5px solid #cc6699;
+    margin: 100px auto;
+    position: relative;
+}
+
+
+.banner .img  li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 0;
+}
+
+.banner .img li.jin{
+    display: block;
+    opacity: 0.8;
+}
+
+.banner .num {
+    width:100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    font-size:0;/*让圈之间没有间隙*/
+
+}
+.banner .num li{
+    width: 20px;
+    height: 20px;
+    background: #888;
+    display: inline-block;/*行内块级元素*/
+    border-radius: 50%;         /*设置圆角*/
+    margin: 0 3px;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+}
+.banner .num .on{
+    background-color: red;
+}
+.banner .btn{
+    width: 30px;
+    height: 60px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:50%;
+    margin-top: -30px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;/*左右居中*/
+    line-height:60px;/*上下居中*/
+    display: none;
+}
+.banner .btn_l{
+    left:0;
+}
+.banner .btn_r{
+    right: 0;
+}
+.banner:hover .btn_l{
+    display: block;
+}
+.banner:hover .btn_r{
+    display: block;
+}

@@ -1,0 +1,66 @@
+
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-family: "Microsoft YaHei", "΢���ź�";
+}
+.banner{
+    width:550px;
+    height: 300px;
+    border: 5px solid #cc6699;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+.banner .img {
+    width: 3000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.banner .img  li{
+    float: left;
+    text-decoration: none;
+}
+
+.banner .num {
+    width:100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    text-align: center;
+    font-size:0px;
+
+}
+.banner .num li{
+    width: 10px;
+    height: 10px;
+    background: #888;
+    display: inline-block;
+    border-radius: 50%;         /*设置圆角*/
+    margin: 0 3px;
+
+}
+.banner .num li.on{
+    background-color: #f60;
+}
+.banner .btn{
+    width: 30px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    line-height:50px;
+}
+.banner .btn_l{
+    left:0;
+}
+.banner .btn_r{
+    right: 0;
+}
